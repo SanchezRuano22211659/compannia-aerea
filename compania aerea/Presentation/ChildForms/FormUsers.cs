@@ -1,4 +1,5 @@
-﻿using Domain;
+﻿using DataAccess.DBServices.Entities;
+using Domain;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -26,9 +27,39 @@ namespace Presentation.ChildForms
 
         private void ListUsers()
         {//LLenar la cuadricula de datos con la lista de usuarios.
-            userList = userModel.GetAllUsers().ToList();//Obtener todos los usuarios.
-            dataGridView1.DataSource = userList;//Establecer la fuente de datos.
+            if (string.IsNullOrWhiteSpace(txtiduser.Text))
+            {
+                // El TextBox de ID está vacío, mostrar todos los usuarios.
+                userList = userModel.GetAllUsers().ToList();
+            }
+            else
+            {
+                // El TextBox de ID contiene un valor, obtener solo ese usuario.
+                int userId;
+                if (int.TryParse(txtiduser.Text, out userId))
+                {
+                    var user = userModel.GetUserById(userId);
+                    if (user != null)
+                    {
+                        userList = new List<UserModel> { user };
+                    }
+                    else
+                    {
+                        // El usuario con el ID especificado no existe.
+                        MessageBox.Show("El usuario con el ID especificado no existe.");
+                        return;
+                    }
+                }
+                else
+                {
+                    // El valor del TextBox de ID no es un número válido.
+                    MessageBox.Show("Por favor ingrese un ID de usuario válido.");
+                    return;
+                }
+            }
+            dataGridView1.DataSource = userList;
             dataGridView1.Visible = true;
+            txtiduser.Text = "";
         }
 
         private void FormUsers_Load(object sender, EventArgs e)

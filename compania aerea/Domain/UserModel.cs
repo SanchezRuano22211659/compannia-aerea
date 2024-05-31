@@ -252,7 +252,7 @@ namespace Domain
             {
                 string query = "SELECT u.id_usuario, u.usuario, u.contrasenia, c.id_cliente, c.apellido_p, c.apellido_m, c.nombres, c.correo, c.telefono, c.cp, c.calle, c.num_calle, c.colonia, c.id_ciudad " +
                "FROM Usuarios u " +
-               "LEFT JOIN Clientes c ON u.id_usuario = c.id_usuario";
+               "INNER JOIN Clientes c ON u.id_usuario = c.id_usuario";
 
                 SqlCommand command = new SqlCommand(query, connection);
 
@@ -318,6 +318,16 @@ namespace Domain
                 Id = userModel.Id,
                 Username = userModel.usuario,
                 Password = userModel.contrasenia,
+                FirstName = userModel.Nombres,
+                LastName = userModel.ApellidoP,
+                MiddleName = userModel.ApellidoM,
+                Email = userModel.Correo,
+                Phone = userModel.Telefono,
+                PostalCode = userModel.Cp,
+                Street = userModel.Calle,
+                StreetNumber = userModel.NumCalle,
+                Neighborhood = userModel.Colonia,
+                CityId = userModel.CiudadId
             };
             return userEntity;
         }
@@ -330,17 +340,18 @@ namespace Domain
                 Id = userEntity.Id,
                 usuario = userEntity.Username,
                 contrasenia = userEntity.Password,
+                Nombres = userEntity.FirstName,
+                ApellidoP = userEntity.LastName,
+                ApellidoM = userEntity.MiddleName,
+                Correo = userEntity.Email,
+                Telefono = userEntity.Phone,
+                Cp = userEntity.PostalCode,
+                Calle = userEntity.Street,
+                NumCalle = userEntity.StreetNumber,
+                Colonia = userEntity.Neighborhood,
+                CiudadId = userEntity.CityId
             };
             return userModel;
-        }
-        private IEnumerable<UserModel> MapUserModel(IEnumerable<User> userEntities)
-        {//Mapear colección de objetos.
-            var userModels = new List<UserModel>();
-            foreach (var user in userEntities)
-            {
-                userModels.Add(MapUserModel(user));
-            }
-            return userModels;
         }
 
         #endregion

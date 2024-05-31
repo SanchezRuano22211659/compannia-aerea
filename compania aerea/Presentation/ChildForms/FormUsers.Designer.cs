@@ -45,8 +45,8 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.Consultar = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.txtiduser = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtiduser = new System.Windows.Forms.TextBox();
             this.labeluser = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -60,12 +60,11 @@
             this.btnEdit.BackColor = System.Drawing.Color.OrangeRed;
             this.btnEdit.FlatAppearance.BorderSize = 0;
             this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEdit.Font = new System.Drawing.Font("Book Antiqua", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.ForeColor = System.Drawing.Color.White;
-            this.btnEdit.Location = new System.Drawing.Point(23, 172);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEdit.Location = new System.Drawing.Point(17, 140);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(342, 47);
+            this.btnEdit.Size = new System.Drawing.Size(256, 38);
             this.btnEdit.TabIndex = 73;
             this.btnEdit.Text = "Modificar";
             this.btnEdit.UseVisualStyleBackColor = false;
@@ -77,12 +76,11 @@
             this.btnAdd.BackColor = System.Drawing.Color.Gray;
             this.btnAdd.FlatAppearance.BorderSize = 0;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Font = new System.Drawing.Font("Book Antiqua", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(23, 23);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAdd.Location = new System.Drawing.Point(17, 19);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(342, 47);
+            this.btnAdd.Size = new System.Drawing.Size(256, 38);
             this.btnAdd.TabIndex = 71;
             this.btnAdd.Text = "Agregar Usuario";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -94,12 +92,11 @@
             this.btnRemove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnRemove.FlatAppearance.BorderSize = 0;
             this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRemove.Font = new System.Drawing.Font("Book Antiqua", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemove.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemove.ForeColor = System.Drawing.Color.White;
-            this.btnRemove.Location = new System.Drawing.Point(23, 245);
-            this.btnRemove.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRemove.Location = new System.Drawing.Point(17, 199);
             this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(342, 47);
+            this.btnRemove.Size = new System.Drawing.Size(256, 38);
             this.btnRemove.TabIndex = 72;
             this.btnRemove.Text = "Eliminar";
             this.btnRemove.UseVisualStyleBackColor = false;
@@ -138,8 +135,7 @@
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.Color.LightGray;
-            this.dataGridView1.Location = new System.Drawing.Point(371, 33);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView1.Location = new System.Drawing.Point(278, 27);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -155,7 +151,7 @@
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.RowTemplate.Height = 40;
-            this.dataGridView1.Size = new System.Drawing.Size(1175, 754);
+            this.dataGridView1.Size = new System.Drawing.Size(881, 613);
             this.dataGridView1.TabIndex = 68;
             this.dataGridView1.Visible = false;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -167,9 +163,10 @@
             this.panel1.Controls.Add(this.btnRemove);
             this.panel1.Controls.Add(this.btnEdit);
             this.panel1.Controls.Add(this.btnAdd);
-            this.panel1.Location = new System.Drawing.Point(0, 301);
+            this.panel1.Location = new System.Drawing.Point(0, 245);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(377, 321);
+            this.panel1.Size = new System.Drawing.Size(283, 261);
             this.panel1.TabIndex = 74;
             // 
             // btnConsultar
@@ -178,12 +175,11 @@
             this.btnConsultar.BackColor = System.Drawing.Color.Silver;
             this.btnConsultar.FlatAppearance.BorderSize = 0;
             this.btnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConsultar.Font = new System.Drawing.Font("Book Antiqua", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsultar.ForeColor = System.Drawing.Color.White;
-            this.btnConsultar.Location = new System.Drawing.Point(23, 96);
-            this.btnConsultar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnConsultar.Location = new System.Drawing.Point(17, 78);
             this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(342, 47);
+            this.btnConsultar.Size = new System.Drawing.Size(256, 38);
             this.btnConsultar.TabIndex = 74;
             this.btnConsultar.Text = "Consultar";
             this.btnConsultar.UseVisualStyleBackColor = false;
@@ -191,35 +187,42 @@
             // 
             // panel2
             // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.Location = new System.Drawing.Point(367, 0);
+            this.panel2.Location = new System.Drawing.Point(275, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1175, 41);
+            this.panel2.Size = new System.Drawing.Size(1481, 33);
             this.panel2.TabIndex = 75;
             // 
             // panel3
             // 
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.panel3.BackColor = System.Drawing.Color.Black;
-            this.panel3.Location = new System.Drawing.Point(404, 581);
+            this.panel3.Location = new System.Drawing.Point(276, 472);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1218, 41);
+            this.panel3.Size = new System.Drawing.Size(1205, 33);
             this.panel3.TabIndex = 76;
             // 
             // panel4
             // 
+            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.panel4.BackColor = System.Drawing.Color.Black;
-            this.panel4.Location = new System.Drawing.Point(1502, 29);
+            this.panel4.Location = new System.Drawing.Point(1126, 24);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(40, 646);
+            this.panel4.Size = new System.Drawing.Size(30, 590);
             this.panel4.TabIndex = 77;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Black;
-            this.panel5.Location = new System.Drawing.Point(367, 29);
+            this.panel5.Location = new System.Drawing.Point(275, 24);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(40, 646);
+            this.panel5.Size = new System.Drawing.Size(30, 588);
             this.panel5.TabIndex = 78;
             // 
             // Consultar
@@ -228,12 +231,11 @@
             this.Consultar.BackColor = System.Drawing.Color.OrangeRed;
             this.Consultar.FlatAppearance.BorderSize = 0;
             this.Consultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Consultar.Font = new System.Drawing.Font("Book Antiqua", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Consultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Consultar.ForeColor = System.Drawing.Color.White;
-            this.Consultar.Location = new System.Drawing.Point(823, 417);
-            this.Consultar.Margin = new System.Windows.Forms.Padding(4);
+            this.Consultar.Location = new System.Drawing.Point(617, 339);
             this.Consultar.Name = "Consultar";
-            this.Consultar.Size = new System.Drawing.Size(342, 47);
+            this.Consultar.Size = new System.Drawing.Size(256, 38);
             this.Consultar.TabIndex = 75;
             this.Consultar.Text = "Consultar";
             this.Consultar.UseVisualStyleBackColor = false;
@@ -246,47 +248,51 @@
             this.panel6.Controls.Add(this.pictureBox1);
             this.panel6.Controls.Add(this.panel1);
             this.panel6.Location = new System.Drawing.Point(-2, 0);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(372, 756);
+            this.panel6.Size = new System.Drawing.Size(279, 614);
             this.panel6.TabIndex = 81;
-            // 
-            // txtiduser
-            // 
-            this.txtiduser.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtiduser.Location = new System.Drawing.Point(823, 208);
-            this.txtiduser.Name = "txtiduser";
-            this.txtiduser.Size = new System.Drawing.Size(342, 32);
-            this.txtiduser.TabIndex = 82;
-            this.txtiduser.Visible = false;
-            this.txtiduser.TextChanged += new System.EventHandler(this.txtiduser_TextChanged);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Presentation.Properties.Resources.perfil;
-            this.pictureBox1.Location = new System.Drawing.Point(76, 61);
+            this.pictureBox1.Location = new System.Drawing.Point(57, 50);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(206, 199);
+            this.pictureBox1.Size = new System.Drawing.Size(154, 162);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 79;
             this.pictureBox1.TabStop = false;
             // 
+            // txtiduser
+            // 
+            this.txtiduser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtiduser.Location = new System.Drawing.Point(617, 169);
+            this.txtiduser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtiduser.Name = "txtiduser";
+            this.txtiduser.Size = new System.Drawing.Size(258, 26);
+            this.txtiduser.TabIndex = 82;
+            this.txtiduser.Visible = false;
+            this.txtiduser.TextChanged += new System.EventHandler(this.txtiduser_TextChanged);
+            // 
             // labeluser
             // 
             this.labeluser.AutoSize = true;
-            this.labeluser.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labeluser.Location = new System.Drawing.Point(819, 172);
+            this.labeluser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labeluser.Location = new System.Drawing.Point(614, 140);
+            this.labeluser.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labeluser.Name = "labeluser";
-            this.labeluser.Size = new System.Drawing.Size(108, 24);
+            this.labeluser.Size = new System.Drawing.Size(92, 20);
             this.labeluser.TabIndex = 83;
             this.labeluser.Text = "id_usuario";
             this.labeluser.Visible = false;
             // 
             // FormUsers
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1542, 753);
+            this.ClientSize = new System.Drawing.Size(1156, 612);
             this.Controls.Add(this.labeluser);
             this.Controls.Add(this.txtiduser);
             this.Controls.Add(this.panel6);
@@ -297,7 +303,6 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.dataGridView1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormUsers";
             this.Text = "Lista de usuarios";
             this.Load += new System.EventHandler(this.FormUsers_Load);

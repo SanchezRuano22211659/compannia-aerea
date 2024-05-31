@@ -11,6 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Presentation.ChildForms
 {
@@ -26,6 +27,7 @@ namespace Presentation.ChildForms
         private UserModel userModel;//Obtiene o establece el modelo de dominio de usuario.
         private bool userModify; //Obtiene o establece un usuario será editado.
         private int userId;//Obtiene o establece el id del usuario a editar.
+
 
         #endregion
 
@@ -52,32 +54,46 @@ namespace Presentation.ChildForms
             userModel = _userModel;//Establecer modelo de dominio de usuario.
             userModify = true;  //Establecer userModify en verdadero.
             FillFields();   //LLenar los campos del formulario con el modelo de usuario (Ver metodo).                 
-                lblCaption.Text = "Modificar usuario";
+            lblCaption.Text = "Modificar usuario";
         }
         #endregion
 
         #region -> Métodos
 
         private void FillFields()
-        {//Cargar los datos del modelo  en los campos del formulario.
+        {//Cargar los datos del modelo en los campos del formulario.
             userId = userModel.Id;
             txtUsername.Text = userModel.usuario;
             txtPassword.Text = userModel.contrasenia;
             txtConfirmPass.Text = userModel.contrasenia;
             txtFirstName.Text = userModel.Nombres;
             txtLastName.Text = userModel.ApellidoP;
+            textBox2.Text = userModel.ApellidoM;
             txtEmail.Text = userModel.Correo;
+            textBox1.Text = userModel.Telefono;
+            textBox7.Text = userModel.Cp.ToString();
+            textBox5.Text = userModel.Calle;
+            textBox4.Text = userModel.NumCalle.ToString();
+            textBox6.Text = userModel.Colonia;
+            textBox3.Text = userModel.CiudadId.ToString();
+        }
 
         private void FillUserModel()
-        {//LLenar modelo
-
+        {//LLenar modelo con los valores de los campos del formulario.
             userModel.Id = userId;
             userModel.usuario = txtUsername.Text;
             userModel.contrasenia = txtPassword.Text;
             userModel.Nombres = txtFirstName.Text;
             userModel.ApellidoP = txtLastName.Text;
+            userModel.ApellidoM = textBox2.Text;
             userModel.Correo = txtEmail.Text;
-
+            userModel.Telefono = textBox1.Text;
+            userModel.Cp = int.Parse(textBox7.Text);
+            userModel.Calle = textBox5.Text;
+            userModel.NumCalle = int.Parse(textBox4.Text);
+            userModel.Colonia = textBox6.Text;
+            userModel.CiudadId = int.Parse(textBox3.Text);
+        }
 
         private void Save()
         {//Guardar cambios.
