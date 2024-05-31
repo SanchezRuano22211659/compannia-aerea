@@ -75,7 +75,6 @@ namespace Presentation.ChildForms
             txtLastName.Text = userModel.ApellidoP;
             txtEmail.Text = userModel.Correo;
 
-        }
         private void FillUserModel()
         {//LLenar modelo
 
@@ -87,7 +86,6 @@ namespace Presentation.ChildForms
             userModel.Correo = txtEmail.Text;
 
 
-        }
         private void Save()
         {//Guardar cambios.
             int result = -1;
