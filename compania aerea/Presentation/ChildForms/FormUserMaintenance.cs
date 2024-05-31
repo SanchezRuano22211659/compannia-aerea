@@ -26,7 +26,6 @@ namespace Presentation.ChildForms
         private UserModel userModel;//Obtiene o establece el modelo de dominio de usuario.
         private bool userModify; //Obtiene o establece un usuario será editado.
         private int userId;//Obtiene o establece el id del usuario a editar.
-        private Image defaultPhoto = Properties.Resources.DefaultUserProfile;//Foto predeterminada para usuarios que no tienen una foto agregada.
 
         #endregion
 
@@ -53,12 +52,6 @@ namespace Presentation.ChildForms
             userModel = _userModel;//Establecer modelo de dominio de usuario.
             userModify = true;  //Establecer userModify en verdadero.
             FillFields();   //LLenar los campos del formulario con el modelo de usuario (Ver metodo).                 
-            if (isUserProfile) //Si la edicion es del perfil de usuario, cambiar titulo y desactivar los cargos.
-            {
-                lblCaption.Text = "Actualizar mi perfil de usuario";
-                cmbPosition.Enabled = false;
-            }
-            else //Caso contrario mostrar titulo  modificar usuario.
                 lblCaption.Text = "Modificar usuario";
         }
         #endregion
