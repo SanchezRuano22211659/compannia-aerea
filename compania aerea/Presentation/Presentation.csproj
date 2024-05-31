@@ -75,47 +75,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="capturas\agregapiloto.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="capturas\agregapiloto.Designer.cs">
-      <DependentUpon>agregapiloto.cs</DependentUpon>
-    </Compile>
     <Compile Include="BaseForms\BaseFixedForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="BaseForms\BaseMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="capturas\agregaravion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="capturas\agregaravion.Designer.cs">
-      <DependentUpon>agregaravion.cs</DependentUpon>
-    </Compile>
-    <Compile Include="capturas\agregartripul.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="capturas\agregartripul.Designer.cs">
-      <DependentUpon>agregartripul.cs</DependentUpon>
-    </Compile>
-    <Compile Include="capturas\agregarvuelo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="capturas\agregarvuelo.Designer.cs">
-      <DependentUpon>agregarvuelo.cs</DependentUpon>
-    </Compile>
     <Compile Include="ChildForms\tripulacion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ChildForms\tripulacion.Designer.cs">
       <DependentUpon>tripulacion.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ChildForms\aviones.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChildForms\aviones.Designer.cs">
-      <DependentUpon>aviones.cs</DependentUpon>
     </Compile>
     <Compile Include="ChildForms\pilotos.cs">
       <SubType>Form</SubType>
@@ -227,23 +197,8 @@
     <EmbeddedResource Include="BaseForms\BaseFixedForm.resx">
       <DependentUpon>BaseFixedForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="capturas\agregapiloto.resx">
-      <DependentUpon>agregapiloto.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="capturas\agregaravion.resx">
-      <DependentUpon>agregaravion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="capturas\agregartripul.resx">
-      <DependentUpon>agregartripul.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="capturas\agregarvuelo.resx">
-      <DependentUpon>agregarvuelo.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\tripulacion.resx">
       <DependentUpon>tripulacion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ChildForms\aviones.resx">
-      <DependentUpon>aviones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\pilotos.resx">
       <DependentUpon>pilotos.cs</DependentUpon>

@@ -308,7 +308,7 @@ namespace Presentation
 
         private void btnHistory_Click(object sender, EventArgs e)
         {
-            OpenChildForm<aviones>(sender);
+
         }
 
         private void btnCalendar_Click(object sender, EventArgs e)
@@ -324,5 +324,10 @@ namespace Presentation
         #endregion
 
         #endregion
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

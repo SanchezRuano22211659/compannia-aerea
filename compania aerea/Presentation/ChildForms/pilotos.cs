@@ -33,9 +33,7 @@ namespace Presentation.ChildForms
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            agregapiloto nuevoForm = new agregapiloto();
-            nuevoForm.StartPosition = FormStartPosition.CenterParent;
-            nuevoForm.ShowDialog(this);
+
         }
 
         private void btnSearch_Click(object sender, EventArgs e)

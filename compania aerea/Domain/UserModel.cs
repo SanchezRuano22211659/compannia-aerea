@@ -250,13 +250,9 @@ namespace Domain
 
             using (var connection = conexion.GetConnection())//Obtener conexion
             {
-                string query = "SELECT u.id_usuario, u.usuario, u.contrasenia, s.id_socio, s.apellido_p, s.apellido_m, s.nombres, s.correo, s.telefono, s.cp, s.calle, s.num_calle, s.colonia, s.id_ciudad " +
-                               "FROM Usuarios u " +
-                               "LEFT JOIN Socios s ON u.id_usuario = s.id_usuario " +
-                               "UNION " +
-                               "SELECT u.id_usuario, u.usuario, u.contrasenia, c.id_cliente, c.apellido_p, c.apellido_m, c.nombres, c.correo, c.telefono, c.cp, c.calle, c.num_calle, c.colonia, c.id_ciudad " +
-                               "FROM Usuarios u " +
-                               "LEFT JOIN Clientes c ON u.id_usuario = c.id_usuario";
+                string query = "SELECT u.id_usuario, u.usuario, u.contrasenia, c.id_cliente, c.apellido_p, c.apellido_m, c.nombres, c.correo, c.telefono, c.cp, c.calle, c.num_calle, c.colonia, c.id_ciudad " +
+               "FROM Usuarios u " +
+               "LEFT JOIN Clientes c ON u.id_usuario = c.id_usuario";
 
                 SqlCommand command = new SqlCommand(query, connection);
 

@@ -1,5 +1,4 @@
-﻿using Presentation.capturas;
-using Presentation.editar;
+﻿using Presentation.editar;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -49,9 +48,7 @@ namespace Presentation.ChildForms
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            agregarvuelo nuevoForm = new agregarvuelo();
-            nuevoForm.StartPosition = FormStartPosition.CenterParent;
-            nuevoForm.ShowDialog(this);
+
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
